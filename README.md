@@ -5,3 +5,11 @@ The News Globe App is an interactive 3D web application that visualizes global n
 ```bash
 npm install
 ```
+
+ **Starting the Web Application**:
+ ```bash
+npm start
+```
+
+**Additional Requirments**:
+Replace 3 placeholders in the APP.js script with the keys for the News Api, Gnews Api and Translation API
