@@ -1,0 +1,78 @@
+
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+
+
+.globeContainer {
+  flex: 3;
+  position: relative;
+  overflow: hidden;
+}
+
+.language-selector {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.searchBar {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.globe {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  border-left: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.article {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.article-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.article-details p {
+  margin: 5px 0;
+}
+
+.article-details a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.article-details a:hover {
+  text-decoration: underline;
+}
+
+.article-separator {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
