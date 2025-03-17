@@ -78,8 +78,8 @@ function App() {
 
   //fetching articles function
   const fetchArticles = (country, query) => {
-      const apiKey = 'c573f39a53cd4eeea0341e609c251baf';
-      const gnewsApiKey = '14ddbe11c97ebbd3e479b6e4f3bce88c';
+      const apiKey = 'NewsApi key';
+      const gnewsApiKey = 'Gnews Api key';
       let url = ``;
 
       if (query && validCountryCodes2.includes(selectedCountryCode)) {
@@ -128,7 +128,7 @@ function App() {
                   });
 
               //const translatedArticles = await translateArticleTitles(articles);
-              setArticles(articles); 
+              setArticles(articles);
           })
           .catch(error => {
               console.error("Error fetching articles:", error);
@@ -139,7 +139,7 @@ function App() {
 
 //translate function
 const translateArticleTitles = async (articles) => {
-  const apiKey = 'AIzaSyBjwq6x_gVXzuFCGq6S11egdCgUou3nVDg';
+  const apiKey = 'Google translate api key';
   const url = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`;
 
   return Promise.all(articles.map(async (article) => {
